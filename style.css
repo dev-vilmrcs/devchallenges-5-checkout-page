@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+:root {
+  --primary-color: #f2994a;
+  --secondary-color: #828282;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+main {
+  max-width: 1000px;
+  min-width: 320px;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.title h1 {
+  margin: 1rem 0;
+}
+
+.container-cart {
+  background: #f2f2f2;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.img-container {
+  display: flex;
+  width: 30%;
+}
+
+.img-container img {
+  border-radius: 10px;
+}
+
+.product-desc {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 65%;
+}
+
+.product-price {
+  align-self: flex-start;
+}
+
+.discount-price {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.regular-price {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.quantity-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #828282;
+  border-radius: 10px;
+}
+
+.quantity-control p {
+  padding: 0.8rem;
+}
+
+.quantity-control button {
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 0.5rem;
+  margin: 0.5rem;
+}
+
+.spaces {
+  padding-top: 4rem;
+}
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid rgb(148, 148, 148);
+  font-weight: bold;
+}
+
+.contact-info {
+  margin: 2rem 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.form-group {
+  margin: 1rem 0;
+  color: var(--secondary-color);
+}
+
+.form-group label {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.input-wrapper {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 90%;
+  border: none;
+  display: inline-block;
+  margin-left: 0.5rem;
+  background: transparent;
+  font: inherit;
+  outline: none;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  right: 1rem;
+  transform: translateY(5px);
+
+}
+
+.col-2 {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.col-2 .form-group {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.col-2  input {
+    width: 78%;
+}
+
+.checkbox-wrapper{
+    margin-top: 1rem;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.5);
+  border: none;
+  outline: none;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: .8rem 2rem;
+  font: inherit;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.btn-continue {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
